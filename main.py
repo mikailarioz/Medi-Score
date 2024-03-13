@@ -79,7 +79,7 @@ cbg_score = float(input("What is the patient's CBG level? "))
 medi_score = check_none(AirOxy(airoxy)) + check_none(Consciousness(consciousness)) + check_none(Respiration(respiration)) + check_none(OxySat(oxysat)) + check_none(Temperature(temperature) + check_none(CBG_score(fasting, cbg_score)))
 
 
-print("The patient's recent medi score is " + medi_score)
+print("The patient's recent medi score is " + str(medi_score))
 
 file_path = "test_results.txt"
 
